@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Background Square -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#shieldGrad)" stroke-width="3" stroke-opacity="0.3" />
+
+  <!-- Outer Hexagonal Blockchain Ring -->
+  <polygon
+    points="256,64 416,156 416,356 256,448 96,356 96,156"
+    fill="url(#innerGlow)"
+    stroke="url(#shieldGrad)"
+    stroke-width="10"
+    stroke-linejoin="round"
+  />
+
+  <!-- Blockchain Node Dots on Hexagon Vertices -->
+  <circle cx="256" cy="64" r="12" fill="#34d399" />
+  <circle cx="416" cy="156" r="12" fill="#2dd4bf" />
+  <circle cx="416" cy="356" r="12" fill="#10b981" />
+  <circle cx="256" cy="448" r="12" fill="#34d399" />
+  <circle cx="96" cy="356" r="12" fill="#10b981" />
+  <circle cx="96" cy="156" r="12" fill="#2dd4bf" />
+
+  <!-- Stylized "V" + Checkmark Shield Emblem -->
+  <path
+    d="M164 188 L238 338 C245 352 267 352 274 338 L356 172"
+    fill="none"
+    stroke="url(#shieldGrad)"
+    stroke-width="36"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Clock / Hour Hand Accent at Top Center -->
+  <circle cx="256" cy="168" r="34" fill="#0f172a" stroke="#34d399" stroke-width="8" />
+  <path
+    d="M256 150 L256 168 L270 176"
+    fill="none"
+    stroke="#6ee7b7"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
